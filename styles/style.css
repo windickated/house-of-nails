@@ -1,0 +1,679 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General */
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.85);
+  word-spacing: 0.2em;
+  line-height: 1.4em;
+  padding-top: 6vw;
+  background-image: url("public/bg.avif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+a:hover, a:active {
+  opacity: 1;
+}
+
+.high-blur {
+  -webkit-backdrop-filter: blur(5vw);
+  backdrop-filter: blur(5vw);
+}
+
+.light-blur {
+  -webkit-backdrop-filter: blur(2.5vw);
+  backdrop-filter: blur(2.5vw);
+}
+
+.general-title {
+  text-align: center;
+  font-size: 4vw;
+  line-height: 10vw;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mobile-bg {
+  display: none;
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("public/bg.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header */
+
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.85));
+  height: 6vw;
+  filter: drop-shadow(0 1vw 1vw black);
+}
+
+.geolocation, .menu {
+  width: 3vw;
+  margin: 2.5vw;
+}
+
+.geolocation:hover, .menu:hover, .geolocation:active, .menu:active {
+  filter: drop-shadow(0 0 0.1vw white);
+  opacity: 0.6;
+}
+
+#geolocation {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  color: black;
+  filter: drop-shadow(0 0 0.1vw white);
+  opacity: 0.9;
+}
+
+nav {
+  visibility: hidden;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  border-left: 0.1vw solid white;
+  border-bottom: 0.1vw solid white;
+  border-bottom-left-radius: 2.5vw;
+}
+
+.navigation-anchor {
+  text-align: right;
+  width: 25vw;
+  display: block;
+  font-size: 2vw;
+  padding: 2vw 4vw 2vw 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navigation-anchor:hover, .navigation-anchor:active {
+  background-color: rgb(190, 190, 190);
+  color: black;
+  font-weight: 600;
+}
+
+.navigation-anchor:last-of-type {
+  border-bottom-left-radius: 2.5vw;
+}
+
+/* Salon section & Emplyee section */
+
+.salon-description, .employee {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 2.5vw;
+  margin: 5vw 2.5vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-radius: 2.5vw;
+}
+
+.employee {
+  margin-top: 0;
+}
+
+.salon, .employee-photo {
+  width: 37.5vw;
+  border: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-radius: 10vw;
+}
+
+.salon-text-container, .employee-description-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  width: 45vw;
+  padding: 0 2.5vw;
+}
+
+.salon-text, .employee-description {
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+/* Booksy section */
+
+.booksy-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 5vw 0;
+}
+
+.booksy-text {
+  text-align: center;
+  color: black;
+  font-size: 2.5vw;
+  font-weight: 600;
+  padding: 2.5vw 0 0 0;
+}
+
+.booksy-anchor {
+  width: 60vw;
+  margin: 2.5vw 20vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6vw;
+}
+
+.booksy-anchor:hover, .booksy-anchor:active {
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+/* Gallery section */
+
+.carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  margin-bottom: 2.5vw;
+  padding: 2.5vw 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.1vw solid rgba(255, 255, 255, 0.5);
+}
+
+.carousel::-webkit-scrollbar {
+  height: 1vw;
+  border: none;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.85));
+  border-radius: 1vw;
+}
+
+.more-photos {
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 2.5vw;
+}
+
+.picture-box {
+  margin: 0 1vw;
+}
+
+.gallery-image {
+  width: 25vw;
+  border: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-radius: 2.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.gallery-image-note {
+  text-align: center;
+  width: 25vw;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Price list section */
+
+.price-list {
+  margin: 5vw 2.5vw;
+}
+
+.price-list-categories {
+  display: grid;
+  grid-template-columns: 31.5vw 31.5vw 31.5vw;
+  column-gap: 0.25vw;
+}
+
+.price-category {
+  text-align: center;
+  font-size: 2.5vw;
+  padding: 1.5vw;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  border-top-left-radius: 2.5vw;
+  border-top-right-radius: 2.5vw;
+}
+
+.price-category:hover, .price-category:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+}
+
+.category-title-mobile {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 600;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category-title-mobile-divider {
+  margin-bottom: 1.5em;
+}
+
+#prices {
+  padding: 2.5vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.1vw solid rgba(255, 255, 255, 0.5);
+  border-bottom-left-radius: 2.5vw;
+  border-bottom-right-radius: 2.5vw;
+}
+
+.service-container {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-name {
+  font-size: 2.5vw;
+  line-height: 4vw;
+  color: white;
+}
+
+.service-annotation {
+  font-size: 2vw;
+  line-height: 3vw;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.service-price {
+  font-size: 2.5vw;
+  line-height: 5vw;
+  font-weight: 600;
+  color: white;
+}
+
+.service-divider {
+  border: 0.1vw solid rgba(255, 255, 255, 0.25);
+}
+
+.empty-category-text {
+  text-align: center;
+  font-size: 4vw;
+  line-height: 5vw;
+  font-weight: 600;
+  margin: 5vw 0;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category-image {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.category-title-image {
+  width: 40%;
+}
+
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  border-top: 0.1vw solid rgba(255, 255, 255, 0.5);
+}
+
+.booksy, .instagram {
+  height: 3.5vw;
+}
+
+.telefon-container {
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+}
+
+.telefon-container:hover, .telefon-container:active {
+  opacity: 1;
+}
+
+.telefon-icon {
+  height: 2.5vw;
+}
+
+.telefon {
+  color: white;
+  font-size: 2.5vw;
+  margin-left: 1.5vw;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5vw 0;
+}
+
+.copyright, .address {
+  text-align: center;
+  font-size: 2vw;
+  padding: 2.5vw 0 7.5vw 0;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.address {
+  margin-top: -7.5vw;
+}
+
+
+
+/* Responsive design */
+
+@media (width < 600px) {
+  html {
+    padding-top: 4em;
+    background-image: none;
+  }
+
+  .general-title {
+    font-size: 1.5em;
+    line-height: 2.5em;
+  }
+
+  .mobile-bg {
+    display: block;
+  }
+
+  /* Header */
+
+  .header {
+    height: 4em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .geolocation, .menu {
+    width: 1.75em;
+    margin: 1em;
+  }
+
+  nav {
+    position: fixed;
+    top: 4em;
+    width: 100vw;
+    border-left: none;
+    border-bottom: 0.1vw solid white;
+    border-radius: 0;
+  }
+  
+  .navigation-anchor {
+    text-align: center;
+    width: 100vw;
+    font-size: 1.5em;
+    padding: 1em 0;
+  }
+  
+  .navigation-anchor:last-of-type {
+    border-radius: 0;
+  }
+
+  /* Salon section & Emplyee section */
+
+  .salon-description, .employee {
+    justify-content: center;
+    margin: 1em;
+    border-radius: 2em;
+  }
+
+  .employee {
+    margin-top: 0;
+  }
+
+  .salon, .employee-photo {
+    width: 80vw;
+    margin: 0.75em;
+    border-radius: 1em;
+  }
+
+  .salon-text-container, .employee-description-container {
+    width: 80vw;
+  }
+
+  .salon-text, .employee-description {
+    font-size: inherit;
+    line-height: 1.5em;
+    padding: 0.5em;
+  }
+
+  /* Booksy section */
+
+  .booksy-container {
+    margin: 3em 0;
+  }
+
+  .booksy-text {
+    width: 80vw;
+    margin: 0 10vw;
+    font-size: inherit;
+    line-height: 1.5em;
+    padding: 2em 0 0 0;
+  }
+
+  .booksy-anchor {
+    width: 90vw;
+    margin: 2em 5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 9vw;
+  }
+
+  /* Gallery section */
+
+  .carousel {
+    margin-bottom: 1em;
+    padding: 1em 0;
+  }
+
+  .carousel::-webkit-scrollbar {
+    height: 0;
+  }
+
+  .more-photos {
+    font-size: inherit;
+    margin-bottom: 1em;
+  }
+
+  .picture-box {
+    margin: 0 0.5em;
+  }
+
+  .gallery-image {
+    width: 60vw;
+    border-radius: 1em;
+    margin-bottom: 1em;
+  }
+
+  .gallery-image-note {
+    width: 60vw;
+    font-size: inherit;
+    line-height: 1em;
+  }
+
+  /* Price list section */
+
+  .price-category {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+
+  #prices {
+    padding: 1.5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+
+  .service-name {
+    font-size: inherit;
+    line-height: 1.5em;
+  }
+
+  .service-annotation {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+
+  .service-price {
+    font-size: 1.1em;
+    line-height: 2.5em;
+    margin-left: 2.5em;
+  }
+
+  .category-image {
+    display: none;
+  }
+
+  .empty-category-text {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  /* Footer */
+
+  .footer {
+    background-image: url('public/logo-transparent.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booksy, .instagram {
+    height: 2em;
+  }
+
+  .telefon-container {
+    margin: 2.5em 0;
+  }
+
+  .telefon-icon {
+    height: 1.5em;
+  }
+
+  .telefon {
+    font-size: 1.5em;
+  }
+
+  .copyright {
+    margin-top: 2em;
+    font-size: inherit;
+  }
+
+  .address {
+    font-size: inherit;
+  }
+}

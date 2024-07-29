@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>House of Nails</title>
+  </head>
+
+
+  <body>
+    <section class="header high-blur">
+      <a class="geolocation" href="https://maps.app.goo.gl/wHMEDKx6hpxTeYoG8?g_st=ic">
+        <img id="geolocation" src="public/geo.avif" alt="Address" />
+      </a>
+      <h1>House of Nails</h1>
+      <img class="menu" src="public/menu.avif" alt="Menu" />
+    </section>
+
+    <nav class="high-blur">
+      <a class="navigation-anchor" href="#zapisy-online">Zapisy online</a>
+      <a class="navigation-anchor" href="#pracownicy">Pracownicy</a>
+      <a class="navigation-anchor" href="#galeria">Galeria</a>
+      <a class="navigation-anchor" href="#cennik">Cennik</a>
+    </nav>
+
+    <div class="mobile-bg"></div>
+
+
+    <section class="salon-description light-blur" id="o-nas">
+      <img class="salon" src="public/salon.avif" alt="House of Nails" />
+      <div class="salon-text-container">
+        <p class="salon-text">
+          House of Nails to renomowany salon podologiczny w Gdańsku, w którym priorytetem jest kompleksowa opieka nad zdrowiem i estetyką Twoich stóp i dłoni.
+        </p>
+        <p class="salon-text">
+          Oferujemy pedicure leczniczy oraz pedicure hybrydowy, dbając o estetykę i kondycję Twoich stóp. Dodatkowo zapewniamy manicure hybrydowy, który podkreśli naturalne piękno Twoich dłoni. Odwiedź nasz salon podologiczny w Gdańsku i przekonaj się o naszej profesjonalnej obsłudze już od pierwszej wizyty!
+        </p>
+      </div>
+    </section>
+
+    <section class="booksy-container light-blur" id="zapisy-online">
+      <p class="booksy-text">Sprawdź dostępne terminy i zapisz się online przez platformę Booksy.pl</p>
+      <img class="booksy-anchor" src="public/booksy-visit.avif" alt="Umów wizytę na Booksy.pl" />
+    </section>
+
+    <section class="employees" id="pracownicy">
+      <p class="general-title">Nasze stylistki</p>
+      <div class="employee light-blur">
+        <div class="employee-description-container">
+          <p class="employee-description">
+            Nazywam się Uliana i jestem doświadczoną stylistką paznokci oraz podologiem, prowadzącą swój przytulny salon w Gdańsku na Przymorzu.
+          </p>
+          <p class="employee-description">
+            Specjalizuję się w pedicure i podologii (pedicure leczniczy), ale z równą precyzją wykonuję manicure hybrydowy oraz dopełnienia żelem. Dodatkowo, oferuję usługi elektrokoagulacji, aby pomóc w jeszcze lepszym dbaniu o Twoje zdrowie i urodę.
+          </p>
+          <p class="employee-description">
+            Moim celem jest, aby każda wizyta była relaksująca i pełna pozytywnej energii. Serdecznie zapraszam – zapisy są otwarte, a ja nie mogę się doczekać, by Cię poznać!
+          </p>
+        </div>
+        <img class="employee-photo" src="public/uliana.avif" alt="Stylistka" />
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <p class="general-title">Galeria</p>
+      <div class="carousel light-blur" id="carousel-manicure"></div>
+      <p class="more-photos">
+        (więcej zdjęć można znaleźć na
+        <a href="https://www.instagram.com/u.taborishena/">Instagramie</a>)
+      </p>
+      <div class="carousel light-blur" id="carousel-pedicure"></div>
+    </section>
+
+    <section class="price-list" id="cennik">
+      <p class="general-title">Cennik na usługi</p>
+      <ul class="price-list-categories">
+        <li class="price-category light-blur" id="manicure"></li>
+        <li class="price-category light-blur" id="pedicure"></li>
+        <li class="price-category light-blur" id="elektrokoagulacja"></li>
+      </ul>
+      <div class="high-blur" id="prices">
+        <p class="empty-category-text">&#8679; Wybierz kategorię &#8679;</p>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <div class="footer-links">
+        <a href="https://booksy.com/pl-pl/228333_house-of-nails_paznokcie_20383_gdansk">
+          <img class="booksy" src="public/booksy.avif" alt="Booksy" />
+        </a>
+        <div class="telefon-container">
+          <img class="telefon-icon" src="public/telefon.avif" alt="Telefon" />
+          <p class="telefon">+48 576 421 390</p>
+        </div>
+        <a href="https://www.instagram.com/u.taborishena/">
+          <img class="instagram" src="public/instagram.avif" alt="Instagram" />
+        </a>
+      </div>
+      <p class="copyright">&#169; 2024 House of Nails</p>
+      <p class="address">ul.Tysiąclecia 24, 80-351 Gdańsk</p>
+    </section>
+
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
