@@ -1,5 +1,12 @@
-import "../styles/reset.css"
-import "../styles/style.css"
+import "../styles/reset.css";
+import "../styles/general.css";
+import "../styles/header.css";
+import "../styles/salon-employees.css";
+import "../styles/booksy.css";
+import "../styles/gallery.css";
+import "../styles/pricelist.css";
+import "../styles/footer.css";
+
 import { priceTabs, deactivateTabs, renderPriceList, resizePriceTabs } from "./priceList.js";
 import renderGallery from "./gallery.js";
 

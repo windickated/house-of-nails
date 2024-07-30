@@ -1,0 +1,104 @@
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-image: radial-gradient(var(--clr-middle-light), var(--clr-light));
+  height: 6vw;
+  filter: drop-shadow(0 1vw 1vw var(--clr-dark));
+}
+
+.geolocation, .menu {
+  width: 3vw;
+  margin: 2.5vw;
+}
+
+.geolocation:hover, .menu:hover, .geolocation:active, .menu:active {
+  filter: drop-shadow(0 0 0.1vw var(--clr-light));
+  opacity: 0.6;
+}
+
+#geolocation {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  color: black;
+  filter: drop-shadow(0 0 0.1vw var(--clr-light));
+  opacity: 0.9;
+}
+
+nav {
+  visibility: hidden;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  border-left: 0.1vw solid var(--clr-border);
+  border-bottom: 0.1vw solid var(--clr-border);
+  border-bottom-left-radius: 2.5vw;
+}
+
+.navigation-anchor {
+  text-align: right;
+  width: 25vw;
+  display: block;
+  font-size: 2vw;
+  padding: 2vw 4vw 2vw 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navigation-anchor:hover, .navigation-anchor:active {
+  background-color: var(--clr-middle-light);
+  color: black;
+  font-weight: 600;
+}
+
+.navigation-anchor:last-of-type {
+  border-bottom-left-radius: 2.5vw;
+}
+
+
+@media (width < 600px) {
+  .header {
+    height: 4em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .geolocation, .menu {
+    width: 1.75em;
+    margin: 1em;
+  }
+
+  nav {
+    position: fixed;
+    top: 4em;
+    width: 100vw;
+    border-left: none;
+    border-bottom: 0.1vw solid var(--clr-light);
+    border-radius: 0;
+  }
+  
+  .navigation-anchor {
+    text-align: center;
+    width: 100vw;
+    font-size: 1.5em;
+    padding: 1em 0;
+  }
+  
+  .navigation-anchor:last-of-type {
+    border-radius: 0;
+  }
+}

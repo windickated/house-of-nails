@@ -1,0 +1,46 @@
+.booksy-container {
+  background-color: var(--clr-middle-light);
+  margin: 5vw 0;
+}
+
+.booksy-text {
+  text-align: center;
+  color: black;
+  font-size: 2.5vw;
+  font-weight: 600;
+  padding: 2.5vw 0 0 0;
+}
+
+.booksy-anchor {
+  width: 60vw;
+  margin: 2.5vw 20vw;
+  background-color: var(--clr-middle-light);
+  border-radius: 6vw;
+}
+
+.booksy-anchor:hover, .booksy-anchor:active {
+  background-color: var(--clr-light);
+  cursor: pointer;
+}
+
+
+@media (width < 600px) {
+  .booksy-container {
+    margin: 3em 0;
+  }
+
+  .booksy-text {
+    width: 80vw;
+    margin: 0 10vw;
+    font-size: inherit;
+    line-height: 1.5em;
+    padding: 2em 0 0 0;
+  }
+
+  .booksy-anchor {
+    width: 90vw;
+    margin: 2em 5vw;
+    background-color: var(--clr-border);
+    border-radius: 9vw;
+  }
+}

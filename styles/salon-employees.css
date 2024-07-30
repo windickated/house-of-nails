@@ -1,0 +1,62 @@
+.salon-description, .employee {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 2.5vw;
+  margin: 5vw 2.5vw;
+  background-color: var(--clr-transparent);
+  border: 0.1vw solid var(--clr-border);
+  border-radius: 2.5vw;
+}
+
+.employee {
+  margin-top: 0;
+}
+
+.salon, .employee-photo {
+  width: 37.5vw;
+  border: 0.1vw solid var(--clr-border);
+  border-radius: 10vw;
+}
+
+.salon-text-container, .employee-description-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  width: 45vw;
+  padding: 0 2.5vw;
+}
+
+.salon-text, .employee-description {
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+
+@media (width < 600px) {
+  .salon-description, .employee {
+    justify-content: center;
+    margin: 1em;
+    border-radius: 2em;
+  }
+
+  .employee {
+    margin-top: 0;
+  }
+
+  .salon, .employee-photo {
+    width: 80vw;
+    margin: 0.75em;
+    border-radius: 1em;
+  }
+
+  .salon-text-container, .employee-description-container {
+    width: 80vw;
+  }
+
+  .salon-text, .employee-description {
+    font-size: inherit;
+    line-height: 1.5em;
+    padding: 0.5em;
+  }
+}

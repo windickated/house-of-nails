@@ -1,0 +1,89 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--clr-dark);
+  border-top: 0.1vw solid var(--clr-border);
+}
+
+.booksy, .instagram {
+  height: 3.5vw;
+}
+
+.telefon-container {
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+}
+
+.telefon-container:hover, .telefon-container:active {
+  opacity: 1;
+}
+
+.telefon-icon {
+  height: 2.5vw;
+}
+
+.telefon {
+  color: var(--clr-light);
+  font-size: 2.5vw;
+  margin-left: 1.5vw;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5vw 0;
+}
+
+.copyright, .address {
+  text-align: center;
+  font-size: 2vw;
+  padding: 2.5vw 0 7.5vw 0;
+  color: var(--clr-border);
+}
+
+.address {
+  margin-top: -7.5vw;
+}
+
+
+@media (width < 600px) {
+  .footer {
+    background-image: url('public/logo-transparent.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booksy, .instagram {
+    height: 2em;
+  }
+
+  .telefon-container {
+    margin: 2.5em 0;
+  }
+
+  .telefon-icon {
+    height: 1.5em;
+  }
+
+  .telefon {
+    font-size: 1.5em;
+  }
+
+  .copyright {
+    margin-top: 2em;
+    font-size: inherit;
+  }
+
+  .address {
+    font-size: inherit;
+  }
+}
