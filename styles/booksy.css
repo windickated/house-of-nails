@@ -1,5 +1,7 @@
 .booksy-container {
-  background-color: var(--clr-border);
+  background-color: var(--clr-transparent);
+  border-top: 0.1vw solid var(--clr-border);
+  border-bottom: 0.1vw solid var(--clr-border);
   margin: 5vw 0;
 }
 

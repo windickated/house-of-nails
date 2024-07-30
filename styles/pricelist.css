@@ -13,7 +13,7 @@
   font-size: 2.5vw;
   padding: 1.5vw;
   color: var(--clr-text);
-  background-color: var(--clr-border);
+  background-color: var(--clr-demi-transparent);
   border: 0.1vw solid var(--clr-border);
   border-bottom: none;
   border-top-left-radius: 2.5vw;
@@ -21,7 +21,7 @@
 }
 
 .price-category:hover, .price-category:active {
-  color: var(--clr-text-hover);
+  color: var(--clr-text-header);
   background-color: var(--clr-bg-primary);
   cursor: pointer;
 }
@@ -31,7 +31,7 @@
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 600;
-  background: radial-gradient(var(--clr-primary), var(--clr-transparent));
+  background: radial-gradient(var(--clr-text-hover), var(--clr-text));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,6 +39,7 @@
 
 .category-title-mobile-divider {
   margin-bottom: 1.5em;
+  border-color: var(--clr-primary);
 }
 
 #prices {
@@ -66,7 +67,7 @@
 .service-annotation {
   font-size: 2vw;
   line-height: 3vw;
-  color: var(--clr-bg-primary);
+  color: var(--clr-text-transparent);
 }
 
 .service-price {
@@ -86,7 +87,7 @@
   line-height: 5vw;
   font-weight: 600;
   margin: 5vw 0;
-  background: radial-gradient(var(--clr-primary), var(--clr-transparent));
+  background: radial-gradient(var(--clr-text), var(--clr-text-transparent));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

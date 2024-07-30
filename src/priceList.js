@@ -118,8 +118,8 @@ const priceMap = new Map([
 export function deactivateTabs(category) {
   priceTabs.forEach((tab) => {
     if(tab.id != category) {
-      tab.style.color = 'var(--clr-light)';
-      tab.style.backgroundColor = 'var(--clr-border)';
+      tab.style.color = 'var(--clr-text)';
+      tab.style.backgroundColor = 'var(--clr-demi-transparent)';
       tab.style.fontWeight = 'inherit';
     }
   })

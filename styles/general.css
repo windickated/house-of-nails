@@ -5,11 +5,31 @@
   --clr-secondary: black;
   --clr-bg-secondary: rgba(0, 0, 0, 0.5);
 
-  --clr-text-hover: white;
   --clr-text: rgba(255, 255, 255, 0.85);
+  --clr-text-hover: white;
+  --clr-text-header: black;
+  --clr-text-transparent: rgba(255, 255, 255, 0.5);
   
   --clr-transparent: rgba(150, 150, 150, 0.1);
+  --clr-demi-transparent: rgba(255, 255, 255, 0.5);
   --clr-border: rgba(255, 255, 255, 0.5);
+}
+
+.light-mode {
+  --clr-primary: rgba(217, 130, 181, 0.75);
+  --clr-bg-primary: rgba(217, 130, 181, 0.4);
+
+  --clr-secondary: rgba(97, 64, 81, 0.7);
+  --clr-bg-secondary: rgba(97, 64, 81, 0.2);
+
+  --clr-text: rgba(0, 0, 0, 0.8);
+  --clr-text-hover: black;
+  --clr-text-header: white;
+  --clr-text-transparent: rgba(0, 0, 0, 0.5);
+  
+  --clr-transparent: rgba(255, 255, 255, 0.25);
+  --clr-demi-transparent: rgba(255, 255, 255, 0.5);
+  --clr-border: rgba(0, 0, 0, 0.5);
 }
 
 

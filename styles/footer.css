@@ -25,7 +25,7 @@
 }
 
 .telefon {
-  color: var(--clr-primary);
+  color: var(--clr-text-hover);
   font-size: 2.5vw;
   margin-left: 1.5vw;
 }
@@ -41,7 +41,7 @@
   text-align: center;
   font-size: 2vw;
   padding: 2.5vw 0 7.5vw 0;
-  color: var(--clr-border);
+  color: var(--clr-text-transparent);
 }
 
 .address {

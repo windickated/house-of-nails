@@ -30,7 +30,7 @@ h1 {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: var(--clr-secondary);
+  color: var(--clr-text-header);
   filter: drop-shadow(0 0 0.1vw var(--clr-primary));
   opacity: 0.9;
 }
@@ -46,6 +46,22 @@ nav {
   border-left: 0.1vw solid var(--clr-border);
   border-bottom: 0.1vw solid var(--clr-border);
   border-bottom-left-radius: 2.5vw;
+}
+
+.toggle-container {
+  z-index: 3;
+  width: 25vw;
+  height: 6vw;
+  padding: 1.5vw 4vw 1.5vw 0;
+  opacity: 0.8;
+  background-color: var(--clr-bg-secondary);
+}
+
+.toggle-button {
+  height: 3vw;
+  float: right;
+  cursor: pointer;
+  opacity: 0.85;
 }
 
 .navigation-anchor {

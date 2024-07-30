@@ -14,6 +14,8 @@ const menuIcon = document.querySelector('.menu');
 const navigationBar = document.querySelector('nav');
 let isHidden = true;
 const booksyButton = document.querySelector('.booksy-anchor');
+const toggleButton = document.querySelector('.toggle-button');
+const theme = localStorage.getItem('theme');
 
 
 window.addEventListener('load', resizePriceTabs);
@@ -22,17 +24,26 @@ window.addEventListener('resize', resizePriceTabs);
 window.addEventListener('load', renderGallery);
 
 
+theme && document.body.classList.add(theme);
+toggleButton.addEventListener('click', handleThemeToggle);
+
 menuIcon.addEventListener('mouseenter', () => {
   if(window.outerWidth >= 600) { showMenu() }
 })
-menuIcon.addEventListener('mouseout', hideMenu)
+menuIcon.addEventListener('mouseout', () => {
+  if(window.outerWidth >= 600) { hideMenu() }
+})
 menuIcon.addEventListener('click', () => {
   isHidden ? showMenu() : hideMenu()
 })
 
 navigationBar.addEventListener('mouseover', showMenu)
 navigationBar.addEventListener('mouseout', hideMenu)
-navigationBar.addEventListener('click', hideMenu)
+navigationBar.addEventListener('click', (event) => {
+  if(event.target.tagName != 'IMG') {
+    hideMenu();
+  }
+})
 
 booksyButton.addEventListener('click', () => {
   window.open('https://booksy.com/pl-pl/228333_house-of-nails_paznokcie_20383_gdansk', '_self')
@@ -40,8 +51,8 @@ booksyButton.addEventListener('click', () => {
 
 priceTabs.forEach((tab) => {
   tab.addEventListener('click', () => {
-    tab.style.color = 'black';
-    tab.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+    tab.style.color = 'var(--clr-text-header)';
+    tab.style.backgroundColor = 'var(--clr-bg-primary)';
     tab.style.fontWeight = '600';
     deactivateTabs(tab.id);
     renderPriceList(tab.id);
@@ -56,4 +67,16 @@ function showMenu() {
 function hideMenu() {
   navigationBar.style.visibility = 'hidden';
   isHidden = true;
+}
+
+
+function handleThemeToggle() {
+  document.body.classList.toggle('light-mode');
+  if(document.body.classList.contains('light-mode')) {
+    toggleButton.src = 'public/light-mode.avif';
+    localStorage.setItem('theme', 'light-mode');
+  } else {
+    toggleButton.src = 'public/dark-mode.avif';
+    localStorage.removeItem('theme');
+  }
 }
