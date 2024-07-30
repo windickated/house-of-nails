@@ -7,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  background-image: radial-gradient(var(--clr-middle-light), var(--clr-light));
+  background-image: radial-gradient(var(--clr-bg-primary), var(--clr-primary));
   height: 6vw;
-  filter: drop-shadow(0 1vw 1vw var(--clr-dark));
+  filter: drop-shadow(0 1vw 1vw var(--clr-secondary));
 }
 
 .geolocation, .menu {
@@ -18,7 +18,7 @@
 }
 
 .geolocation:hover, .menu:hover, .geolocation:active, .menu:active {
-  filter: drop-shadow(0 0 0.1vw var(--clr-light));
+  filter: drop-shadow(0 0 0.1vw var(--clr-primary));
   opacity: 0.6;
 }
 
@@ -30,8 +30,8 @@ h1 {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: black;
-  filter: drop-shadow(0 0 0.1vw var(--clr-light));
+  color: var(--clr-secondary);
+  filter: drop-shadow(0 0 0.1vw var(--clr-primary));
   opacity: 0.9;
 }
 
@@ -51,15 +51,17 @@ nav {
 .navigation-anchor {
   text-align: right;
   width: 25vw;
+  height: 6vw;
   display: block;
   font-size: 2vw;
   padding: 2vw 4vw 2vw 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--clr-text);
+  background-color: var(--clr-bg-secondary);
 }
 
 .navigation-anchor:hover, .navigation-anchor:active {
-  background-color: var(--clr-middle-light);
-  color: black;
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-secondary);
   font-weight: 600;
 }
 
@@ -87,13 +89,14 @@ nav {
     top: 4em;
     width: 100vw;
     border-left: none;
-    border-bottom: 0.1vw solid var(--clr-light);
+    border-bottom: 0.1vw solid var(--clr-border);
     border-radius: 0;
   }
   
   .navigation-anchor {
     text-align: center;
     width: 100vw;
+    height: auto;
     font-size: 1.5em;
     padding: 1em 0;
   }

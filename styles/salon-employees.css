@@ -28,6 +28,7 @@
 }
 
 .salon-text, .employee-description {
+  color: var(--clr-text);
   font-size: 2vw;
   line-height: 2.5vw;
 }

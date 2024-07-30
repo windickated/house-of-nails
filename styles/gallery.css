@@ -19,11 +19,12 @@
 }
 
 .carousel::-webkit-scrollbar-thumb {
-  background-image: radial-gradient(var(--clr-transparent), var(--clr-light));
+  background-image: radial-gradient(var(--clr-transparent), var(--clr-primary));
   border-radius: 1vw;
 }
 
 .more-photos {
+  color: var(--clr-text);
   text-align: center;
   font-size: 2vw;
   margin-bottom: 2.5vw;
