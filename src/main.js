@@ -1,3 +1,5 @@
+import "../styles/reset.css"
+import "../styles/style.css"
 import { priceTabs, deactivateTabs, renderPriceList, resizePriceTabs } from "./priceList.js";
 import renderGallery from "./gallery.js";
 

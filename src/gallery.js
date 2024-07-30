@@ -190,7 +190,7 @@ function renderGallery() {
     carousel.items.forEach((galleryItem) => {
       html += `
       <div class="picture-box">
-        <img class="gallery-image" src="${galleryItem.picture}" />
+        <img class="gallery-image" loading="lazy" src="${galleryItem.picture}" />
         <p class="gallery-image-note">${galleryItem.description}</p>
       </div>
       `;
