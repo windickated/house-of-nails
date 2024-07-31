@@ -25,7 +25,7 @@ const prices = [
       {
         name: 'Zdobienia',
         price: 10,
-        annotation: '(cyrkonie, stemple, rysunki, naklejki)'
+        annotation: '(cena się różni w zależności od rodzaju zdobienia)'
       },
       {
         name: 'French/Pyłek',
