@@ -61,11 +61,12 @@ booksyButton.addEventListener('click', () => {
 
 googleButton.addEventListener('mouseover', () => googleButtonHandle(true));
 googleButton.addEventListener('mouseout', () => googleButtonHandle(false));
-googleButton.addEventListener('touchstart', () => googleButtonHandle(true));
-googleButton.addEventListener('touchend', () => googleButtonHandle(false));
+googleButton.addEventListener('mouseup', () => window.open('https://g.page/r/CfMB2T9FtuLoEBE/review', '_blank'))
 
-googleButton.addEventListener('click', () => {
-  window.open('https://g.page/r/CfMB2T9FtuLoEBE/review', '_blank')
+googleButton.addEventListener('touchstart', () => googleButtonHandle(true));
+googleButton.addEventListener('touchend', () => {
+  window.open('https://g.page/r/CfMB2T9FtuLoEBE/review', '_blank');
+  googleButtonHandle(false);
 })
 
 
