@@ -26,7 +26,7 @@
 }
 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
   .booksy-container {
     margin: 3em 0;
   }

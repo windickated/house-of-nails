@@ -86,7 +86,7 @@ nav {
 }
 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
   .header {
     height: 4em;
   }

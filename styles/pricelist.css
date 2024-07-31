@@ -110,7 +110,7 @@
 }
 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
   .price-category {
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;

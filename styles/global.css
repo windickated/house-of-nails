@@ -101,7 +101,7 @@ a:hover, a:active {
 
 /* Responsive design */
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
   body {
     padding-top: 4em;
     background-image: none;

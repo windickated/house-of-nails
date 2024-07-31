@@ -24,7 +24,7 @@
 }
 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
   .color-palette {
     justify-content: center;
     margin: 1em;
