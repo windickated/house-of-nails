@@ -13,6 +13,14 @@
   margin-top: 2.5vw;
 }
 
+.review-note {
+  color: var(--clr-text-transparent);
+  text-align: center;
+  font-size: 2vw;
+  margin-top: -1.5vw;
+  margin-bottom: 2.5vw;
+}
+
 .google-anchor {
   width: 60vw;
   margin: 2.5vw 20vw;
@@ -41,5 +49,12 @@
     width: 90vw;
     margin: 2em 5vw;
     border-radius: 9vw;
+  }
+
+  .review-note {
+    font-size: inherit;
+    line-height: 1.5em;
+    margin-top: -1.5em;
+    margin-bottom: 1em;
   }
 }

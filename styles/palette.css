@@ -11,6 +11,7 @@
 
 .color-palette-picture {
   width: 100%;
+  border: 0.1vw solid var(--clr-border);
   border-radius: 1vw;
 }
 
