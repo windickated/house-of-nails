@@ -6,95 +6,95 @@ const galleryItems = [
     container: carouselManicure,
     items: [
       {
-        picture: 'public/manicure/1.avif',
+        picture: '/manicure/1.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/2.avif',
+        picture: '/manicure/2.avif',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: 'public/manicure/3.avif',
+        picture: '/manicure/3.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/4.avif',
+        picture: '/manicure/4.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/5.avif',
+        picture: '/manicure/5.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/6.avif',
+        picture: '/manicure/6.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/7.avif',
+        picture: '/manicure/7.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/8.avif',
+        picture: '/manicure/8.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/9.avif',
+        picture: '/manicure/9.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/10.avif',
+        picture: '/manicure/10.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/11.avif',
+        picture: '/manicure/11.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/12.avif',
+        picture: '/manicure/12.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/13.avif',
+        picture: '/manicure/13.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/14.avif',
+        picture: '/manicure/14.avif',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: 'public/manicure/15.avif',
+        picture: '/manicure/15.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/16.avif',
+        picture: '/manicure/16.avif',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: 'public/manicure/17.avif',
+        picture: '/manicure/17.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/18.avif',
+        picture: '/manicure/18.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/19.avif',
+        picture: '/manicure/19.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/20.avif',
+        picture: '/manicure/20.avif',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: 'public/manicure/21.avif',
+        picture: '/manicure/21.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/22.avif',
+        picture: '/manicure/22.avif',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: 'public/manicure/23.avif',
+        picture: '/manicure/23.avif',
         description: 'Manicure hybrydowy'
       }
     ]
@@ -103,79 +103,79 @@ const galleryItems = [
     container: carouselPedicure,
     items: [
       {
-        picture: 'public/pedicure/1.avif',
+        picture: '/pedicure/1.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/2.avif',
+        picture: '/pedicure/2.avif',
         description: 'Założenie klamry'
       },
       {
-        picture: 'public/pedicure/3.avif',
+        picture: '/pedicure/3.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/4.avif',
+        picture: '/pedicure/4.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/5.avif',
+        picture: '/pedicure/5.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/6.avif',
+        picture: '/pedicure/6.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/7.avif',
+        picture: '/pedicure/7.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/8.avif',
+        picture: '/pedicure/8.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/9.avif',
+        picture: '/pedicure/9.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/10.avif',
+        picture: '/pedicure/10.avif',
         description: 'Założenie klamry'
       },
       {
-        picture: 'public/pedicure/11.avif',
+        picture: '/pedicure/11.avif',
         description: 'Założenie klamry'
       },
       {
-        picture: 'public/pedicure/12.avif',
+        picture: '/pedicure/12.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/13.avif',
+        picture: '/pedicure/13.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/14.avif',
+        picture: '/pedicure/14.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/15.avif',
+        picture: '/pedicure/15.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/16.avif',
+        picture: '/pedicure/16.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/17.avif',
+        picture: '/pedicure/17.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/18.avif',
+        picture: '/pedicure/18.avif',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: 'public/pedicure/19.avif',
+        picture: '/pedicure/19.avif',
         description: 'Pedicure hybrydowy'
       }
     ]

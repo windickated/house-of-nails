@@ -42,7 +42,6 @@
   .booksy-anchor {
     width: 90vw;
     margin: 2em 5vw;
-    background-color: var(--clr-border);
     border-radius: 9vw;
   }
 }

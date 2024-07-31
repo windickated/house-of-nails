@@ -58,10 +58,10 @@ nav {
 }
 
 .toggle-button {
+  display: block;
   height: 3vw;
   float: right;
   cursor: pointer;
-  opacity: 0.85;
 }
 
 .navigation-anchor {
@@ -107,6 +107,18 @@ nav {
     border-left: none;
     border-bottom: 0.1vw solid var(--clr-border);
     border-radius: 0;
+  }
+
+  .toggle-container {
+    height: 4em;
+    width: 100%;
+    padding: 1.5em 0 0.5em 0;
+  }
+
+  .toggle-button {
+    height: 2em;
+    float: none;
+    margin-inline: auto;
   }
   
   .navigation-anchor {

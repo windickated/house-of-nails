@@ -43,7 +43,7 @@ body {
   word-spacing: 0.2em;
   line-height: 1.4em;
   padding-top: 6vw;
-  background-image: url("public/bg.avif");
+  background-image: url("/bg.avif");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -92,7 +92,7 @@ a:hover, a:active {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("public/bg.avif");
+  background-image: url("/bg.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

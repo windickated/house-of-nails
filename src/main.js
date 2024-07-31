@@ -17,15 +17,23 @@ const booksyButton = document.querySelector('.booksy-anchor');
 const toggleButton = document.querySelector('.toggle-button');
 const theme = localStorage.getItem('theme');
 
+const geoIcon = document.getElementById('geolocation');
+const booksyIcon = document.querySelector('.booksy');
+const telefonIcon = document.querySelector('.telefon-icon');
+const instagramIcon = document.querySelector('.instagram');
+
 
 window.addEventListener('load', resizePriceTabs);
 window.addEventListener('resize', resizePriceTabs);
 
 window.addEventListener('load', renderGallery);
 
+window.addEventListener('load', changeIcons);
+
 
 theme && document.body.classList.add(theme);
 toggleButton.addEventListener('click', handleThemeToggle);
+
 
 menuIcon.addEventListener('mouseenter', () => {
   if(window.outerWidth >= 600) { showMenu() }
@@ -40,13 +48,11 @@ menuIcon.addEventListener('click', () => {
 navigationBar.addEventListener('mouseover', showMenu)
 navigationBar.addEventListener('mouseout', hideMenu)
 navigationBar.addEventListener('click', (event) => {
-  if(event.target.tagName != 'IMG') {
-    hideMenu();
-  }
+  if(event.target.tagName != 'IMG') { hideMenu() }
 })
 
 booksyButton.addEventListener('click', () => {
-  window.open('https://booksy.com/pl-pl/228333_house-of-nails_paznokcie_20383_gdansk', '_self')
+  window.open('https://booksy.com/pl-pl/228333_house-of-nails_paznokcie_20383_gdansk', '_blank')
 })
 
 priceTabs.forEach((tab) => {
@@ -72,11 +78,34 @@ function hideMenu() {
 
 function handleThemeToggle() {
   document.body.classList.toggle('light-mode');
+  changeIcons();
   if(document.body.classList.contains('light-mode')) {
-    toggleButton.src = 'public/light-mode.avif';
+    toggleButton.src = '/light-mode.avif';
     localStorage.setItem('theme', 'light-mode');
   } else {
-    toggleButton.src = 'public/dark-mode.avif';
+    toggleButton.src = '/dark-mode.avif';
     localStorage.removeItem('theme');
+  }
+}
+
+function changeIcons() {
+  if(document.body.classList.contains('light-mode')) {
+    toggleButton.src = '/light-mode.avif';
+
+    geoIcon.src = '/geo-light.avif';
+    menuIcon.src = '/menu-light.avif';
+
+    booksyIcon.src = '/booksy-light.avif';
+    telefonIcon.src = '/telefon-light.avif';
+    instagramIcon.src = '/instagram-light.avif';
+  } else {
+    toggleButton.src = '/dark-mode.avif';
+
+    geoIcon.src = '/geo.avif';
+    menuIcon.src = '/menu.avif';
+
+    booksyIcon.src = '/booksy.avif';
+    telefonIcon.src = '/telefon.avif';
+    instagramIcon.src = '/instagram.avif';
   }
 }

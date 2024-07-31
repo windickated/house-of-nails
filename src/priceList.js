@@ -156,7 +156,7 @@ export function renderPriceList(category) {
       html += '<hr class="service-divider">'
     }
   }
-  html += `<img class="category-image" src="public/${category}.avif" />`
+  html += `<img class="category-image" src="/${category}.avif" />`
   priceContainer.innerHTML = html;
 }
 
@@ -164,7 +164,7 @@ export function resizePriceTabs() {
   priceTabs.forEach((tab) => {
     if(window.outerWidth <= 600) {
       tab.innerHTML = `
-        <img class="category-title-image" src="public/${tab.id}-category.avif" alt="${tab.id}" />
+        <img class="category-title-image" src="/${tab.id}-category.avif" alt="${tab.id}" />
       `;
     } else {
       tab.innerHTML = tab.id.charAt(0).toUpperCase() + tab.id.slice(1)

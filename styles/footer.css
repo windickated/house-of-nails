@@ -51,7 +51,7 @@
 
 @media (width < 600px) {
   .footer {
-    background-image: url('public/logo-transparent.avif');
+    background-image: url('/logo-transparent.avif');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em 0;
