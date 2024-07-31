@@ -4,6 +4,7 @@ import "../styles/header.css";
 import "../styles/salon-employees.css";
 import "../styles/booksy.css";
 import "../styles/gallery.css";
+import "../styles/palette.css";
 import "../styles/pricelist.css";
 import "../styles/google.css";
 import "../styles/footer.css";
