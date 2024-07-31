@@ -1,0 +1,45 @@
+.google {
+  background-color: var(--clr-transparent);
+  border-top: 0.1vw solid var(--clr-border);
+  border-bottom: 0.1vw solid var(--clr-border);
+  margin: 5vw 0;
+}
+
+.review-text {
+  color: var(--clr-text);
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 2.5vw;
+}
+
+.google-anchor {
+  width: 60vw;
+  margin: 2.5vw 20vw;
+  background-color: var(--clr-bg-primary);
+  border-radius: 6vw;
+}
+
+.google-anchor:hover, .google-anchor:active {
+  background-color: var(--clr-primary);
+  cursor: pointer;
+}
+
+
+@media (width < 600px) {
+  .google {
+    margin: 3em 0;
+  }
+
+  .review-text {
+    font-size: inherit;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  .google-anchor {
+    width: 90vw;
+    margin: 2em 5vw;
+    border-radius: 9vw;
+  }
+}
