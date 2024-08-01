@@ -195,7 +195,7 @@ function renderGallery() {
       <div class="picture-box">
         <picture>
           <source srcset="${pictureAVIF}" type=""image/avif" />
-          <source srcset="${pictureWEBP}" type=""image/avif" />
+          <source srcset="${pictureWEBP}" type=""image/webp" />
           <img
             class="gallery-image lazy loading"
             src="https://placehold.co/600x800/000000/000000"
