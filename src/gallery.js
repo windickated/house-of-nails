@@ -200,6 +200,7 @@ function renderGallery() {
             class="gallery-image lazy loading"
             src="https://placehold.co/600x800/000000/000000"
             data-src="${galleryItem.picture}"
+            alt="Foto"
           />
         </picture>
         <p class="gallery-image-note">${galleryItem.description}</p>
