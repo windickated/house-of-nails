@@ -92,9 +92,9 @@ function hideMenu() {
 
 function googleButtonHandle(hover) {
   if(hover === true) {
-    googleButton.src = '/google-hover.avif';
+    googleButton.src = '/google-hover.png';
   } else {
-    googleButton.src = '/google.avif';
+    googleButton.src = '/google.png';
   }
 }
 
@@ -103,32 +103,32 @@ function handleThemeToggle() {
   document.body.classList.toggle('light-mode');
   changeIcons();
   if(document.body.classList.contains('light-mode')) {
-    toggleButton.src = '/light-mode.avif';
+    toggleButton.src = '/light-mode.png';
     localStorage.setItem('theme', 'light-mode');
   } else {
-    toggleButton.src = '/dark-mode.avif';
+    toggleButton.src = '/dark-mode.png';
     localStorage.removeItem('theme');
   }
 }
 
 function changeIcons() {
   if(document.body.classList.contains('light-mode')) {
-    toggleButton.src = '/light-mode.avif';
+    toggleButton.src = '/light-mode.png';
 
-    geoIcon.src = '/geo-light.avif';
-    menuIcon.src = '/menu-light.avif';
+    geoIcon.src = '/geo-light.png';
+    menuIcon.src = '/menu-light.png';
 
-    booksyIcon.src = '/booksy-light.avif';
-    telefonIcon.src = '/telefon-light.avif';
-    instagramIcon.src = '/instagram-light.avif';
+    booksyIcon.src = '/booksy-light.png';
+    telefonIcon.src = '/telefon-light.png';
+    instagramIcon.src = '/instagram-light.png';
   } else {
-    toggleButton.src = '/dark-mode.avif';
+    toggleButton.src = '/dark-mode.png';
 
-    geoIcon.src = '/geo.avif';
-    menuIcon.src = '/menu.avif';
+    geoIcon.src = '/geo.png';
+    menuIcon.src = '/menu.png';
 
-    booksyIcon.src = '/booksy.avif';
-    telefonIcon.src = '/telefon.avif';
-    instagramIcon.src = '/instagram.avif';
+    booksyIcon.src = '/booksy.png';
+    telefonIcon.src = '/telefon.png';
+    instagramIcon.src = '/instagram.png';
   }
 }

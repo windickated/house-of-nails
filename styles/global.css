@@ -92,7 +92,7 @@ a:hover, a:active {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("/bg.avif");
+  background-image: url("/bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

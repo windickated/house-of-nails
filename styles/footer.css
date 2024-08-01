@@ -51,8 +51,9 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    background-image: url('/logo-transparent.avif');
+    background-image: url('/logo-transparent.png');
     background-repeat: no-repeat;
+    background-origin: right;
     background-size: cover;
     padding: 1em 0;
   }

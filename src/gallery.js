@@ -6,95 +6,95 @@ const galleryItems = [
     container: carouselManicure,
     items: [
       {
-        picture: '/manicure/1.avif',
+        picture: '/manicure/1.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/2.avif',
+        picture: '/manicure/2.jpg',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: '/manicure/3.avif',
+        picture: '/manicure/3.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/4.avif',
+        picture: '/manicure/4.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/5.avif',
+        picture: '/manicure/5.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/6.avif',
+        picture: '/manicure/6.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/7.avif',
+        picture: '/manicure/7.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/8.avif',
+        picture: '/manicure/8.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/9.avif',
+        picture: '/manicure/9.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/10.avif',
+        picture: '/manicure/10.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/11.avif',
+        picture: '/manicure/11.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/12.avif',
+        picture: '/manicure/12.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/13.avif',
+        picture: '/manicure/13.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/14.avif',
+        picture: '/manicure/14.jpg',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: '/manicure/15.avif',
+        picture: '/manicure/15.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/16.avif',
+        picture: '/manicure/16.jpg',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: '/manicure/17.avif',
+        picture: '/manicure/17.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/18.avif',
+        picture: '/manicure/18.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/19.avif',
+        picture: '/manicure/19.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/20.avif',
+        picture: '/manicure/20.jpg',
         description: 'Dopełnienie żelem'
       },
       {
-        picture: '/manicure/21.avif',
+        picture: '/manicure/21.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/22.avif',
+        picture: '/manicure/22.jpg',
         description: 'Manicure hybrydowy'
       },
       {
-        picture: '/manicure/23.avif',
+        picture: '/manicure/23.jpg',
         description: 'Manicure hybrydowy'
       }
     ]
@@ -103,79 +103,79 @@ const galleryItems = [
     container: carouselPedicure,
     items: [
       {
-        picture: '/pedicure/1.avif',
+        picture: '/pedicure/1.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/2.avif',
+        picture: '/pedicure/2.jpg',
         description: 'Założenie klamry'
       },
       {
-        picture: '/pedicure/3.avif',
+        picture: '/pedicure/3.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/4.avif',
+        picture: '/pedicure/4.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/5.avif',
+        picture: '/pedicure/5.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/6.avif',
+        picture: '/pedicure/6.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/7.avif',
+        picture: '/pedicure/7.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/8.avif',
+        picture: '/pedicure/8.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/9.avif',
+        picture: '/pedicure/9.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/10.avif',
+        picture: '/pedicure/10.jpg',
         description: 'Założenie klamry'
       },
       {
-        picture: '/pedicure/11.avif',
+        picture: '/pedicure/11.jpg',
         description: 'Założenie klamry'
       },
       {
-        picture: '/pedicure/12.avif',
+        picture: '/pedicure/12.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/13.avif',
+        picture: '/pedicure/13.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/14.avif',
+        picture: '/pedicure/14.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/15.avif',
+        picture: '/pedicure/15.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/16.avif',
+        picture: '/pedicure/16.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/17.avif',
+        picture: '/pedicure/17.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/18.avif',
+        picture: '/pedicure/18.jpg',
         description: 'Pedicure hybrydowy'
       },
       {
-        picture: '/pedicure/19.avif',
+        picture: '/pedicure/19.jpg',
         description: 'Pedicure hybrydowy'
       }
     ]
@@ -188,13 +188,20 @@ function renderGallery() {
     let html = '';
     shuffleItems(carousel.items);
     carousel.items.forEach((galleryItem) => {
+      const pictureAVIF = galleryItem.picture.replace('jpg', 'avif');
+      const pictureWEBP = galleryItem.picture.replace('jpg', 'webp');
+
       html += `
       <div class="picture-box">
-        <img
-          class="gallery-image lazy loading"
-          src="https://placehold.co/600x800/000000/000000"
-          data-src="${galleryItem.picture}"
-        />
+        <picture>
+          <source srcset="${pictureAVIF}" type=""image/avif" />
+          <source srcset="${pictureWEBP}" type=""image/avif" />
+          <img
+            class="gallery-image lazy loading"
+            src="https://placehold.co/600x800/000000/000000"
+            data-src="${galleryItem.picture}"
+          />
+        </picture>
         <p class="gallery-image-note">${galleryItem.description}</p>
       </div>
       `;
