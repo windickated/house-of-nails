@@ -49,6 +49,17 @@
   color: var(--clr-text-transparent);
 }
 
+.loading {
+  filter: blur(2.5vw) grayscale(100%);
+  opacity: 0;
+}
+
+.loaded {
+  filter: blur(0) grayscale(0);
+  opacity: 1;
+  transition: 0.75s ease-in-out;
+}
+
 
 @media screen and (max-width: 600px) {
   .carousel {

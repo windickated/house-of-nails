@@ -190,13 +190,18 @@ function renderGallery() {
     carousel.items.forEach((galleryItem) => {
       html += `
       <div class="picture-box">
-        <img class="gallery-image" loading="lazy" src="${galleryItem.picture}" />
+        <img
+          class="gallery-image lazy loading"
+          src="https://placehold.co/600x800/000000/000000"
+          data-src="${galleryItem.picture}"
+        />
         <p class="gallery-image-note">${galleryItem.description}</p>
       </div>
       `;
     })
     carousel.container.innerHTML = html;
   })
+  lazyLoading();
 }
 
 function shuffleItems(items) {
@@ -208,6 +213,27 @@ function shuffleItems(items) {
 
     [items[currentIndex], items[randomIndex]] = [items[randomIndex], items[currentIndex]];
   }
+}
+
+
+function lazyLoading() {
+  const lazyPics = document.querySelectorAll('.lazy');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        let foto = entry.target;
+        foto.src = foto.dataset.src;
+        foto.classList.remove('loading');
+        foto.classList.add('loaded');
+        observer.unobserve(entry.target);
+      }
+    })
+  })
+
+  lazyPics.forEach((foto) => {
+    observer.observe(foto);
+  })
 }
 
 
