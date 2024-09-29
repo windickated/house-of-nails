@@ -11,6 +11,7 @@ import "../styles/footer.css";
 
 import { priceTabs, deactivateTabs, renderPriceList, resizePriceTabs } from "./priceList.js";
 import renderGallery from "./gallery.js";
+import animation from "./animations.js";
 
 const menuIcon = document.querySelector('.menu');
 const navigationBar = document.querySelector('nav');
@@ -32,6 +33,8 @@ window.addEventListener('resize', resizePriceTabs);
 window.addEventListener('load', renderGallery);
 
 window.addEventListener('load', changeIcons);
+
+window.addEventListener('load', animation);
 
 
 theme && document.body.classList.add(theme);

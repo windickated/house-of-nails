@@ -88,7 +88,8 @@ nav {
 
 @media screen and (max-width: 600px) {
   .header {
-    height: 4em;
+    height: 100%;
+    transition: all 0.5s ease-out;
   }
 
   h1 {
