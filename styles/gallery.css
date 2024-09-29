@@ -26,7 +26,7 @@
 .more-photos {
   color: var(--clr-text);
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-bottom: 2.5vw;
 }
 
@@ -44,7 +44,7 @@
 .gallery-image-note {
   text-align: center;
   width: 25vw;
-  font-size: 2.5vw;
+  font-size: 2vw;
   line-height: 2.5vw;
   color: var(--clr-text-transparent);
 }

@@ -10,7 +10,7 @@
 
 .price-category {
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
   padding: 1.5vw;
   color: var(--clr-text);
   background-color: var(--clr-demi-transparent);
@@ -18,6 +18,7 @@
   border-bottom: none;
   border-top-left-radius: 2.5vw;
   border-top-right-radius: 2.5vw;
+  transition: all 0.15s ease-in-out;
 }
 
 .price-category:hover, .price-category:active {
@@ -59,20 +60,20 @@
 }
 
 .service-name {
-  font-size: 2.5vw;
-  line-height: 4vw;
+  font-size: 2vw;
+  line-height: 3vw;
   color: var(--clr-text);
 }
 
 .service-annotation {
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 3vw;
   color: var(--clr-text-transparent);
 }
 
 .service-price {
-  font-size: 2.5vw;
-  line-height: 5vw;
+  font-size: 2vw;
+  line-height: 3vw;
   font-weight: 600;
   color: var(--clr-text-hover);
 }
@@ -83,7 +84,7 @@
 
 .empty-category-text {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 5vw;
   font-weight: 600;
   margin: 5vw 0;

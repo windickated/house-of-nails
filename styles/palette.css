@@ -1,16 +1,13 @@
 .color-palette {
   display: flex;
   justify-content: space-between;
-  flex-flow: column wrap;
+  align-items: center;
+  flex-flow: column-reverse wrap;
   padding: 2.5vw;
-  margin: 5vw 2.5vw;
-  background-color: var(--clr-transparent);
-  border: 0.1vw solid var(--clr-border);
-  border-radius: 2.5vw;
 }
 
 .color-palette-picture {
-  width: 100%;
+  width: 50vw;
   border: 0.1vw solid var(--clr-border);
   border-radius: 1vw;
 }
@@ -18,17 +15,21 @@
 .color-palette-text {
   color: var(--clr-text);
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 600;
-  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
 }
 
 
 @media screen and (max-width: 600px) {
   .color-palette {
+    flex-direction: column;
     justify-content: center;
     margin: 1em;
+    margin-top: 2.5em;
     border-radius: 2em;
+    background-color: var(--clr-transparent);
+    border: 0.1vw solid var(--clr-border);
   }
 
   .color-palette-picture {
@@ -40,5 +41,6 @@
     font-size: inherit;
     line-height: 1.5em;
     margin-top: 0.5em;
+    margin-bottom: 0;
   }
 }

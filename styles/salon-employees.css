@@ -14,22 +14,30 @@
 }
 
 .salon, .employee-photo {
-  width: 37.5vw;
+  width: 30vw;
   border: 0.1vw solid var(--clr-border);
-  border-radius: 10vw;
+  border-radius: 1vw;
+}
+
+.employee-photo {
+  width: 25vw;
 }
 
 .salon-text-container, .employee-description-container {
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  width: 45vw;
+  width: 55vw;
   padding: 0 2.5vw;
+}
+
+.employee-description-container {
+  width: 60vw;
 }
 
 .salon-text, .employee-description {
   color: var(--clr-text);
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 2.5vw;
 }
 

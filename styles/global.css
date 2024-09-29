@@ -41,7 +41,7 @@ body {
   font-size: 1em;
   color: var(--clr-light);
   word-spacing: 0.2em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   padding-top: 6vw;
   background-image: url("/bg.avif");
   background-attachment: fixed;
@@ -57,7 +57,6 @@ body::-webkit-scrollbar {
 
 a {
   color: var(--clar-text-hover);
-  text-decoration: none;
   opacity: 0.85;
 }
 
@@ -77,8 +76,8 @@ a:hover, a:active {
 
 .general-title {
   text-align: center;
-  font-size: 4vw;
-  line-height: 10vw;
+  font-size: 3vw;
+  line-height: 7vw;
   font-weight: 600;
   color: var(--clr-text);
 }
