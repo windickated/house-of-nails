@@ -36,16 +36,16 @@ h1 {
 }
 
 nav {
-  visibility: hidden;
   z-index: 2;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   display: flex;
   flex-flow: column nowrap;
   border-left: 0.1vw solid var(--clr-border);
   border-bottom: 0.1vw solid var(--clr-border);
   border-bottom-left-radius: 2.5vw;
+  transition: all 0.3s ease-in-out;
 }
 
 .toggle-container {
@@ -88,6 +88,7 @@ nav {
 
 @media screen and (max-width: 600px) {
   .header {
+    z-index: 3;
     height: 100%;
     transition: all 0.5s ease-out;
   }
@@ -103,7 +104,8 @@ nav {
 
   nav {
     position: fixed;
-    top: 4em;
+    top: -100%;
+    right: 0;
     width: 100vw;
     border-left: none;
     border-bottom: 0.1vw solid var(--clr-border);

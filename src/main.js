@@ -84,11 +84,20 @@ priceTabs.forEach((tab) => {
 
 
 function showMenu() {
-  navigationBar.style.visibility = 'visible';
+  if (window.outerWidth <= 600) {
+    navigationBar.style.top = '4em';
+  } else {
+    navigationBar.style.right = '0';
+  }
+  
   isHidden = false;
 }
 function hideMenu() {
-  navigationBar.style.visibility = 'hidden';
+  if (window.outerWidth <= 600) {
+    navigationBar.style.top = '-100%';
+  } else {
+    navigationBar.style.right = '-100%';
+  }
   isHidden = true;
 }
 
