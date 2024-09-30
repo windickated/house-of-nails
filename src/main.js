@@ -37,7 +37,7 @@ window.addEventListener('load', changeIcons);
 window.addEventListener('load', animation);
 
 if(window.outerWidth <= 600) {
-  window.addEventListener('click', () => {
+  window.addEventListener('touchdown', () => {
     if(event.target.tagName != 'IMG') hideMenu()
   });
 }

@@ -4,7 +4,7 @@ const prices = [
     services: [
       {
         name: 'Manicure hybrydowy',
-        price: 110,
+        price: 115,
         annotation: null
       },
       {
@@ -29,7 +29,7 @@ const prices = [
       },
       {
         name: 'Naprawa paznokcia',
-        price: 10,
+        price: 5,
         annotation: null
       }
     ]
@@ -49,12 +49,12 @@ const prices = [
       },
       {
         name: 'Pedicure klasyczny pełny',
-        price: 100,
+        price: 110,
         annotation: null
       },
       {
         name: 'Pedicure klasyczny',
-        price: 80,
+        price: 70,
         annotation: '(tylko paznokcie)'
       },
       {
