@@ -97,6 +97,36 @@ const galleryItems = [
         picture: '/manicure/23.jpg',
         description: 'Manicure hybrydowy'
       }
+      ,
+      {
+        picture: '/manicure/24.jpg',
+        description: 'Manicure hybrydowy'
+      }
+      ,
+      {
+        picture: '/manicure/25.jpg',
+        description: 'Manicure hybrydowy'
+      }
+      ,
+      {
+        picture: '/manicure/26.jpg',
+        description: 'Manicure hybrydowy'
+      }
+      ,
+      {
+        picture: '/manicure/27.jpg',
+        description: 'Manicure hybrydowy'
+      }
+      ,
+      {
+        picture: '/manicure/28.jpg',
+        description: 'Manicure hybrydowy'
+      }
+      ,
+      {
+        picture: '/manicure/29.jpg',
+        description: 'Manicure hybrydowy'
+      }
     ]
   },
   {
@@ -176,6 +206,14 @@ const galleryItems = [
       },
       {
         picture: '/pedicure/19.jpg',
+        description: 'Pedicure hybrydowy'
+      },
+      {
+        picture: '/pedicure/20.jpg',
+        description: 'Pedicure hybrydowy'
+      },
+      {
+        picture: '/pedicure/21.jpg',
         description: 'Pedicure hybrydowy'
       }
     ]
