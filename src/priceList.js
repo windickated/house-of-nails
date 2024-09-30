@@ -23,7 +23,7 @@ const prices = [
         annotation: '(cena się różni w zależności od rodzaju zdobienia)'
       },
       {
-        name: 'French/Pyłek',
+        name: 'French',
         price: 15,
         annotation: null
       },
