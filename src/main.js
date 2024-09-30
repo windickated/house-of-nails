@@ -36,6 +36,12 @@ window.addEventListener('load', changeIcons);
 
 window.addEventListener('load', animation);
 
+if(window.outerWidth <= 600) {
+  window.addEventListener('click', () => {
+    if(event.target.tagName != 'IMG') hideMenu()
+  });
+}
+
 
 theme && document.body.classList.add(theme);
 toggleButton.addEventListener('click', handleThemeToggle);
@@ -53,9 +59,6 @@ menuIcon.addEventListener('click', () => {
 
 navigationBar.addEventListener('mouseover', showMenu);
 navigationBar.addEventListener('mouseout', hideMenu);
-navigationBar.addEventListener('click', (event) => {
-  if(event.target.tagName != 'IMG') { hideMenu() }
-})
 
 
 booksyButton.addEventListener('click', () => {
@@ -89,16 +92,17 @@ function showMenu() {
   } else {
     navigationBar.style.right = '0';
   }
-  
   isHidden = false;
 }
 function hideMenu() {
-  if (window.outerWidth <= 600) {
-    navigationBar.style.top = '-100%';
-  } else {
-    navigationBar.style.right = '-100%';
+  if (!isHidden) {
+    if (window.outerWidth <= 600) {
+      navigationBar.style.top = '-100%';
+    } else {
+      navigationBar.style.right = '-100%';
+    }
+    isHidden = true;
   }
-  isHidden = true;
 }
 
 

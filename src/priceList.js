@@ -4,37 +4,32 @@ const prices = [
     services: [
       {
         name: 'Manicure hybrydowy',
-        price: 100,
+        price: 110,
         annotation: null
       },
       {
         name: 'Dopełnienie żelem',
-        price: 130,
+        price: 140,
         annotation: '(długość do 2)'
       },
       {
         name: 'Manicure klasyczny',
-        price: 50,
-        annotation: null
-      },
-      {
-        name: 'Ściągnięcie hybrydy',
-        price: 20,
+        price: 60,
         annotation: null
       },
       {
         name: 'Zdobienia',
-        price: 10,
+        price: 15,
         annotation: '(cena się różni w zależności od rodzaju zdobienia)'
       },
       {
         name: 'French/Pyłek',
-        price: 10,
+        price: 15,
         annotation: null
       },
       {
         name: 'Naprawa paznokcia',
-        price: 5,
+        price: 10,
         annotation: null
       }
     ]
@@ -44,42 +39,42 @@ const prices = [
     services: [
       {
         name: 'Pedicure hybrydowy pełny',
-        price: 140,
+        price: 150,
         annotation: null
       },
       {
         name: 'Pedicure hybrydowy',
-        price: 120,
+        price: 130,
         annotation: '(tylko paznokcie)'
       },
       {
         name: 'Pedicure klasyczny pełny',
-        price: 90,
+        price: 100,
         annotation: null
       },
       {
         name: 'Pedicure klasyczny',
-        price: 50,
+        price: 80,
         annotation: '(tylko paznokcie)'
       },
       {
         name: 'Pedicure podologiczny podstawowy',
-        price: 130,
+        price: 140,
         annotation: '(opracowanie paznokci i pięt oraz usunięcie pojedynczego modzela/odciska)'
       },
       {
         name: 'Pedicure podologiczny specjalistyczny',
-        price: 170,
+        price: 180,
         annotation: '(podstawowy + opracowanie pękających pięt, usunięcie odcisków i modzeli)'
       },
       {
         name: 'Opracowanie wrastającego paznokcia',
-        price: 150,
+        price: 170,
         annotation: '+ założenie klamry tytanowej '
       },
       {
         name: 'Założenie kolejnej (zmiana) klamry tytanowej',
-        price: 50,
+        price: 70,
         annotation: null
       }
     ]
