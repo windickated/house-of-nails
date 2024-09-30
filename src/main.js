@@ -53,7 +53,7 @@ menuIcon.addEventListener('click', () => {
 
 navigationBar.addEventListener('mouseover', showMenu);
 navigationBar.addEventListener('mouseout', hideMenu);
-navigationBar.addEventListener('click', (event) => {
+window.addEventListener('click', (event) => {
   if(event.target.tagName != 'IMG') { hideMenu() }
 })
 
