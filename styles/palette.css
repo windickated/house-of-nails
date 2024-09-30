@@ -7,9 +7,11 @@
 }
 
 .color-palette-picture {
-  width: 50vw;
+  visibility: hidden;
+  width: 10vw;
   border: 0.1vw solid var(--clr-border);
   border-radius: 1vw;
+  animation: rotatePicture 2s 0.5s ease-in-out forwards;
 }
 
 .color-palette-text {
@@ -33,6 +35,7 @@
   }
 
   .color-palette-picture {
+    visibility: visible;
     width: 100%;
     border-radius: 1.5em;
   }
@@ -42,5 +45,18 @@
     line-height: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0;
+  }
+}
+
+
+@keyframes rotatePicture {
+  from {
+    width: 10vw;
+    opacity: 0;
+  } to {
+    width: 50vw;
+    opacity: 1;
+    transform: rotate(270deg);
+    margin-block: -9vw;
   }
 }
