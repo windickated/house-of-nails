@@ -36,12 +36,6 @@ window.addEventListener('load', changeIcons);
 
 window.addEventListener('load', animation);
 
-if(window.outerWidth <= 600) {
-  window.addEventListener('touchdown', () => {
-    if(event.target.tagName != 'IMG') hideMenu()
-  });
-}
-
 
 theme && document.body.classList.add(theme);
 toggleButton.addEventListener('click', handleThemeToggle);
@@ -59,6 +53,9 @@ menuIcon.addEventListener('click', () => {
 
 navigationBar.addEventListener('mouseover', showMenu);
 navigationBar.addEventListener('mouseout', hideMenu);
+navigationBar.addEventListener('click', (event) => {
+  if(event.target.tagName != 'IMG') { hideMenu() }
+})
 
 
 booksyButton.addEventListener('click', () => {
