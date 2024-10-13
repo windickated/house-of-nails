@@ -25,6 +25,7 @@ const geoIcon = document.getElementById('geolocation');
 const booksyIcon = document.querySelector('.booksy');
 const telefonIcon = document.querySelector('.telefon-icon');
 const instagramIcon = document.querySelector('.instagram');
+const menuDarkener = document.querySelector('.mobile-menu-darkener');
 
 
 window.addEventListener('load', resizePriceTabs);
@@ -57,6 +58,8 @@ navigationBar.addEventListener('click', (event) => {
   if(event.target.tagName != 'IMG') { hideMenu() }
 })
 
+menuDarkener.addEventListener('click', hideMenu);
+
 
 booksyButton.addEventListener('click', () => {
   window.open('https://booksy.com/pl-pl/228333_house-of-nails_paznokcie_20383_gdansk', '_blank')
@@ -86,6 +89,7 @@ priceTabs.forEach((tab) => {
 function showMenu() {
   if (window.outerWidth <= 600) {
     navigationBar.style.top = '4em';
+    menuDarkener.style.display = 'block';
   } else {
     navigationBar.style.right = '0';
   }
@@ -95,6 +99,7 @@ function hideMenu() {
   if (!isHidden) {
     if (window.outerWidth <= 600) {
       navigationBar.style.top = '-100%';
+      menuDarkener.style.display = 'none';
     } else {
       navigationBar.style.right = '-100%';
     }
