@@ -22,12 +22,10 @@
 }
 
 .google-anchor {
-  visibility: hidden;
-  width: 10vw;
+  width: 30vw;
   margin: 2.5vw 35vw;
   background-color: var(--clr-bg-primary);
   border-radius: 3vw;
-  animation: buttonAppear 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -50,11 +48,9 @@
   }
 
   .google-anchor {
-    visibility: visible;
     width: 90vw;
     margin: 2em 5vw;
     border-radius: 9vw;
-    animation: none;
   }
 
   .review-note {
@@ -62,16 +58,5 @@
     line-height: 1.5em;
     margin-top: -1.5em;
     margin-bottom: 1em;
-  }
-}
-
-
-@keyframes buttonAppear {
-  from {
-    width: 0;
-    margin-inline: 50vw;
-  } to {
-    width: 30vw;
-    margin-inline: 35vw;
   }
 }

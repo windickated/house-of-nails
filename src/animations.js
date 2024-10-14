@@ -2,14 +2,15 @@ function animation() {
   const header = document.querySelector('.header');
   const salon = document.querySelector('.salon-description')
   const salonPicture = document.querySelector('.salon');
-  const booksyButton = document.querySelector('.booksy-anchor');
-  const googleButton = document.querySelector('.google-anchor');
-  const palettePicture = document.querySelector('.color-palette-picture');
+  const hiddenElements = document.querySelectorAll('.hidden');
+  const employees = document.querySelectorAll('.employee');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-      if(entry.isIntersecting) {
-        entry.target.style.visibility = 'visible';
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
       }
     })
   })
@@ -21,12 +22,14 @@ function animation() {
       salon.style.opacity = '1';
       salonPicture.style.margin = '0.75em';
       salonPicture.style.opacity = '1'; 
+      employees.forEach((employee) => {
+        employee.classList.remove('hidden');
+        employee.classList.remove('scale-down');
+      })
     }, 1000)
-  } else {
-    observer.observe(palettePicture)
-    observer.observe(booksyButton)
-    observer.observe(googleButton)
-  }
+  } 
+
+  hiddenElements.forEach((element) => observer.observe(element));
 }
 
 export default animation;
