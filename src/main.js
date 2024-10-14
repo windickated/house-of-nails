@@ -27,6 +27,14 @@ const telefonIcon = document.querySelector('.telefon-icon');
 const instagramIcon = document.querySelector('.instagram');
 const menuDarkener = document.querySelector('.mobile-menu-darkener');
 
+const booksyLink = document.getElementById('booksy-link');
+const employeesLink = document.getElementById('employees-link');
+const galleryLink = document.getElementById('gallery-link');
+const priceListLink = document.getElementById('pricelist-link');
+
+const priceList = document.getElementById('pricelist');
+const employees = document.getElementById('employees');
+const gallery = document.getElementById('gallery');
 
 window.addEventListener('load', resizePriceTabs);
 window.addEventListener('resize', resizePriceTabs);
@@ -59,6 +67,19 @@ navigationBar.addEventListener('click', (event) => {
 })
 
 menuDarkener.addEventListener('click', hideMenu);
+
+
+booksyLink.addEventListener('click', () => scrollToThe(booksyButton));
+employeesLink.addEventListener('click', () => scrollToThe(employees));
+galleryLink.addEventListener('click', () => scrollToThe(gallery));
+priceListLink.addEventListener('click', () => scrollToThe(priceList));
+
+function scrollToThe(element) {
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  })
+}
 
 
 booksyButton.addEventListener('click', () => {
